@@ -1,8 +1,5 @@
 import 'dart:developer';
-
 import 'package:flutter/material.dart';
-import 'package:sidebarx/sidebarx.dart';
-
 import '../constant/colors/app_colors.dart';
 import '../constant/strgins/app_strings.dart';
 import '../data/model/post_response.dart';
@@ -36,11 +33,8 @@ class _AppbarState extends State<Appbar> {
     }
   }
 
-  final _controller = SidebarXController(selectedIndex: 0, extended: true);
-
   @override
   Widget build(BuildContext context) {
-    final isSmallScreen = MediaQuery.of(context).size.width < 500;
     return AppBar(
       centerTitle: true,
       backgroundColor: AppColors.itemColor,
